@@ -6,7 +6,7 @@ const App = () => {
   const [newUser, setNewUser] = useState(null);
 
   return (
-    <div>
+    <div className="container text-center">
       <h1>User Management</h1>
       <AddUserForm onUserAdded={setNewUser} />
       <UserList newUser={newUser} />
